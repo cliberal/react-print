@@ -6,10 +6,10 @@ class PrintProvider extends React.Component {
     }
   }
   componentDidMount() {
-    window.matchMedia('print').onchange = e => {
+    window.matchMedia('print').onchange = mql => {
       this.setState({
         style: {
-          display: window.matchMedia('print').matches ? 'none' : '',
+          display: mql.matches ? 'none' : '',
         },
       })
     }
