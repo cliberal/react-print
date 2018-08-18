@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.1.1"></a>
+## [1.1.1](https://github.com/cliberal/react-print-modern/compare/v1.1.0...v1.1.1) (2018-08-18)
+
+
+### Bug Fixes
+
+* change  main file ([289da59](https://github.com/cliberal/react-print-modern/commit/289da59))
+
+
+
 <a name="1.1.0"></a>
 # 1.1.0 (2018-08-18)
 
