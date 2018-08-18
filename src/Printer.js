@@ -1,5 +1,6 @@
 import { Component } from 'react'
 import ReactDOM from 'react-dom'
+import './index.css'
 
 export default class Printer extends Component {
   componentDidMount() {
@@ -11,14 +12,13 @@ export default class Printer extends Component {
   }
 
   setContainer() {
-    const element = document.createElement('div')
-    element.style.display = 'none'
-    this.mountNode = element
-    
-    document.body.appendChild(element)
-    window.matchMedia('print').onchange = mql => {
-      element.style.display =mql.matches ? 'block' : 'none';
+    let element = document.querySelector('#react-print-modern')
+    if (!element) {
+      element = document.createElement('div')
+      element.id = 'react-print-modern'
+      document.body.appendChild(element)
     }
+    this.mountNode = element
     this.forceUpdate()
   }
 
