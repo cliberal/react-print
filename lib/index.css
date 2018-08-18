@@ -1,0 +1,18 @@
+#react-print-modern {
+  display: none;
+}
+@media print {
+  body {
+      visibility: hidden !important;
+  }
+  #react-print-modern {
+      display: initial;
+      visibility: visible;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 100vh;
+  }
+}
