@@ -10,15 +10,6 @@ npm install react-print-modern
 ## Usage
 
 ```js
-
-// index.js
-ReactDOM.render(
-  <PrintProvider>
-    <App />
-  </PrintProvider>,
-  document.getElementById('root')
-)
-
 // file needs print
 class App extends Component {
   render() {
@@ -39,3 +30,6 @@ class App extends Component {
   }
 }
 ```
+
+## TODO
+- [ ] how to handle async render components?
