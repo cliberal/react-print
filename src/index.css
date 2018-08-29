@@ -5,14 +5,12 @@
   body {
       visibility: hidden !important;
   }
+  body > * {
+    height: 0 !important;
+  }
   #react-print-modern {
-      display: initial;
+      display: block;
       visibility: visible;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      height: 100vh;
+      height: auto !important;
   }
 }
